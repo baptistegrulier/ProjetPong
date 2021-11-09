@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none; /* ne selectionne pas de texte */
+}
+body{
+    background: black;
+}
+
+canvas {
+    width:99%;
+    height: 100%;
+    bottom: 0;
+    position: absolute;
+    z-index: 99;
+}
+
+.Vertical_line{ /*Affiche la barre du milieu*/
+    border-left: 8px solid rgb(230, 218, 218);
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    margin-left: -4px;
+    top: 0px;
+    z-index: -1;  
+}
+.Down_line{ /*Affiche la barre du bas*/
+    background: white;
+    width: 100%;
+    height: 7px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 100%-7px;
+}
+.Up_line{ /*Affiche la barre du haut*/
+    background: white;
+    width: 100%;
+    height: 7px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+}
